@@ -1,0 +1,34 @@
+# Sphear extracted image assets
+These are cropped image assets extracted from the three provided composite images. They include product photos, packaging panels, label/dieline panels, website sections, and the original source images.
+## Files
+- `01_box_closed_front_photo.jpg` — box, 600x435px
+- `02_box_open_with_bags_photo.jpg` — box, 568x435px
+- `03_box_packaging_features_panel.jpg` — box, 368x435px
+- `04_box_exterior_all_sides_panel.jpg` — box, 420x416px
+- `05_box_interior_photo.jpg` — box, 255x416px
+- `06_box_dieline_technical.jpg` — box, 580x416px
+- `07_box_specifications_panel.jpg` — box, 281x416px
+- `08_box_feature_icons_strip.jpg` — box, 675x172px
+- `09_box_whats_inside_and_label_panel.jpg` — box, 580x172px
+- `10_box_made_in_berkshire_panel.jpg` — box, 281x172px
+- `11_bag_hero_product_photo.jpg` — bag, 535x512px
+- `12_bag_packaging_concept_panel.jpg` — bag, 300x512px
+- `13_bag_range_panel.jpg` — bag, 701x512px
+- `14_bag_label_front.jpg` — bag, 360x340px
+- `15_bag_label_back.jpg` — bag, 305x340px
+- `16_bag_label_placement.jpg` — bag, 345x340px
+- `17_bag_dieline_technical.jpg` — bag, 526x340px
+- `18_bag_description_specs_strip.jpg` — bag, 875x172px
+- `19_bag_icon_strip.jpg` — bag, 661x172px
+- `20_website_full_page_mockup.jpg` — web, 759x1600px
+- `21_website_header_nav_logo.jpg` — web, 759x90px
+- `22_website_hero_section.jpg` — web, 759x520px
+- `23_website_hero_product_glass_crop.jpg` — web, 395x360px
+- `24_website_product_detail_section.jpg` — web, 759x340px
+- `25_website_single_sphere_photo.jpg` — web, 292x300px
+- `26_website_made_for_best_section.jpg` — web, 759x200px
+- `27_website_process_section.jpg` — web, 759x178px
+- `28_website_trade_partners_section.jpg` — web, 759x207px
+- `29_website_transit_box_photo.jpg` — web, 453x207px
+- `30_website_footer.jpg` — web, 759x155px
+- `31_sphear_logo_from_website.jpg` — web, 125x60px
