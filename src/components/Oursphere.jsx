@@ -24,7 +24,7 @@ export function OurSphere() {
                     <div className="flex flex-col space-y-4">
                         {
                             spheredetails.map((sphere, index) => (
-                                <div key={index} className="flex flex-row items-center justify-center space-x-8 text-gray-300">
+                                <div key={index} className="flex flex-row items-center justify-start space-x-8 text-gray-300">
                                     <div >{<sphere.icon />}</div>
                                     <h3>{sphere.title}</h3>
                                 </div>
