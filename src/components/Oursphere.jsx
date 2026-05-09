@@ -1,138 +1,86 @@
-import { ChevronRight } from "lucide-react";
-import { assets, getintouch, poursphere, process, quicklinks, trade } from "../assets/assets";
+import { assets, formats, spheredetails, best } from "../assets/assets";
 
 export function OurSphere() {
+    console.log(assets.oursphere)
     return (
-        <div className="bg-black">
-
-
-            <section className="bg-black py-16 px-6">
-
-
-                <div className="flex flex-col items-center mb-12">
-                    <h1 className="font-serif text-gray-100 uppercase tracking-widest text-2xl mb-3">
-                        Our Process
-                    </h1>
-                    <hr className="border-[#58522a] border-t-2 rounded-2xl w-16" />
+        <section className="sm:min-h-screen w-full flex flex-col">
+            <div className="sm:h-[450px] bg-[#0f0f0f] grid grid-cols-1 sm:grid-cols-3 ">
+                <div className="h-full" >
+                    <img src={assets.oursphere} className="h-full object-contain h-[300px] sm:h-[450px] " />
                 </div>
+                <div className="flex flex-col items-start mt-12 pl-15 space-y-4 text-xs ">
+                    <h1 className="font-serif text-gray-300">
+                        OUR SPHERE
+                    </h1>
+                    <h2 className="font-serif text-gray-300">
+                        55MM PREMIUM <br />
+                        ICE SPHERE
+                        <hr className="border-[#58522a] border-t-2 rounded-2xl w-16" />
+                    </h2>
 
-
-                <div className="flex flex-col md:flex-row items-start justify-center gap-8 md:gap-4">
-                    {process.map((proces, index) => {
-                        const Icon = proces.icon;
-                        return (
-                            <div key={index} className="flex flex-row md:flex-row items-center w-full md:w-auto">
-
-                                <div className="flex flex-col items-center text-center text-gray-100 max-w-[150px] gap-3">
-                                    <Icon size={40} strokeWidth={1} className="text-gray-100" />
-                                    <h3 className="font-bold uppercase text-xs tracking-wider">{proces.title}</h3>
-                                    <p className="text-gray-400 text-xs leading-relaxed">{proces.description}</p>
+                    <h2 className="text-xs text-gray-300">
+                        Engineered using directional freezing to create <br /> high-density, crystal-clear spheres designed <br /> for premium spirits and signature cocktails.
+                    </h2>
+                    <div className="flex flex-col space-y-4">
+                        {
+                            spheredetails.map((sphere, index) => (
+                                <div key={index} className="flex flex-row items-center justify-center space-x-8 text-gray-300">
+                                    <div >{<sphere.icon />}</div>
+                                    <h3>{sphere.title}</h3>
                                 </div>
 
-
-                                {index < process.length - 1 && (
-                                    <div className="text-gray-500 mx-3 mb-10 hidden md:block">
-                                        <ChevronRight size={16} />
-                                    </div>
-                                )}
-                            </div>
-                        );
-                    })}
+                            ))
+                        }
+                    </div>
                 </div>
-            </section>
-
-
-            <section className="flex flex-col md:flex-row w-full">
-                <div className="bg-white flex flex-col justify-center gap-5 p-10 md:w-1/2">
-                    <p className="uppercase text-xs tracking-widest text-gray-500">Trade Partners</p>
-
-                    <h2 className="font-serif uppercase text-4xl md:text-5xl leading-tight text-black">
-                        Let's Raise <br /> The Standard
-                    </h2>
-                    <hr className="border-[#58522a] border-t-2 rounded-2xl w-16" />
-                    <p className="text-gray-600 text-sm max-w-sm">
-                        Join Berkshire's premium venues that trust Sphear Ice for quality, reliability and service.
-                    </p>
-
-                    <button className="uppercase bg-black text-white font-serif text-xs tracking-widest py-3 px-5 w-fit">
-                        Apply for Trade Account
+                <div className="border border-gray-600 flex flex-col items-center rounded-lg p-6 mt-5 sm:mt-15 space-y-6 sm:mb-12 sm:ml-20 sm:mr-12 bg-[#0f0f0f]">
+                    <div className="flex flex-col items-center space-y-2">
+                        <h1 className="uppercase text-gray-300 text-xs">
+                            available formats
+                        </h1>
+                        <hr className="border-gray-500 border-t-2 rounded-2xl w-64" />
+                    </div>
+                    <div className="flex flex-col gap-6" >
+                        {
+                            formats.map((format, index) => (
+                                <div key={index} className="flex gap-4 ">
+                                    <div className="gap-4">{<format.icon size={48} strokeWidth={1} className="text-gray-300 shrink-0" />}</div>
+                                    <div className="text-gray-300 text-xs" >
+                                        <h1>{format.title}</h1>
+                                        <h3>{format.description}</h3>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <button className="bg-white text-xs font-thin tracking-tight p-2 rounded">
+                        REQUEST TRADE PRICING
                     </button>
                 </div>
 
-
-                <div className="md:w-1/2 h-64 md:h-auto">
-                    <img src={assets.sphear} alt="Sphear Ice" className="w-full h-full object-cover" />
+            </div>
+            <div className="bg-white sm:flex-1 ">
+                <div className="flex flex-col items-center mt-6">
+                    <h1 className="uppercase font-serif text-black text-3xl font-thin">made for the best</h1>
+                    <hr className="border-[#9e9036] border-t-2 rounded-2xl w-16" />
                 </div>
-            </section>
-
-            <footer className="bg-[#0a0a0a] text-gray-400 px-8 py-14">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
-
-
-                    {poursphere.map((pour, index) => {
-                        const Icon1 = pour.icon1;
-                        const Icon2 = pour.icon2;
-                        return (
-                            <div key={index} className="flex flex-col gap-4">
-                                <img src={pour.Image} alt="Sphear Logo" className="w-16 h-16 rounded-full object-cover" />
-                                <p className="text-xs leading-relaxed text-gray-500">{pour.title}</p>
-
-                                <div className="flex gap-3 text-gray-400">
-                                    <Icon1 size={18} />
-                                    <Icon2 size={18} />
+                <div className="grid grid-cols-2 sm:flex sm:flex-row sm:items-center sm:justify-center sm:py-15">
+                    {
+                        best.map((bes, index) => (
+                            <div key={index} className="flex flex-row items-center ">
+                                <div className="flex flex-col items-start p-6 space-y-2">
+                                    <bes.icon className="text-[#9e9036]" strokeWidth={1} size={40} />
+                                    <h3 className="text-xs font-bold uppercase tracking-widest">{bes.title}</h3>
+                                    <p className="text-xs text-gray-500">{bes.description}</p>
                                 </div>
+                                {index < best.length - 1 && (
+                                    <div className="border-l border-gray-300 self-stretch" />
+                                )}
                             </div>
-                        );
-                    })}
-
-
-                    <div className="flex flex-col gap-3">
-                        <h1 className="uppercase text-gray-100 text-xs tracking-widest mb-2">Quick Links</h1>
-                        {quicklinks.map((quick, index) => (
-
-                            <a href={quick.href} key={index} className="text-gray-500 text-sm hover:text-white transition-colors">
-                                {quick.title}
-                            </a>
-                        ))}
-                    </div>
-
-
-                    <div className="flex flex-col gap-3">
-                        <h1 className="uppercase text-gray-100 text-xs tracking-widest mb-2">Trade</h1>
-                        {trade.map((trad, index) => (
-                            <a href={trad.href} key={index} className="text-gray-500 text-sm hover:text-white transition-colors">
-                                {trad.link}
-                            </a>
-                        ))}
-                    </div>
-
-
-                    <div className="flex flex-col gap-3">
-                        <h1 className="uppercase text-gray-100 text-xs tracking-widest mb-2">Get in Touch</h1>
-                        {getintouch.map((get, index) => {
-                            const Icon = get.icon;
-                            return (
-                                <div key={index} className="flex items-center gap-2 text-gray-500 text-sm">
-                                    <Icon size={14} />
-                                    <span>{get.title}</span>
-                                </div>
-                            );
-                        })}
-                    </div>
+                        ))
+                    }
                 </div>
-
-
-                <hr className="border-gray-800 mb-6" />
-
-                <div className="flex flex-col md:flex-row items-center justify-between text-xs text-gray-600 gap-2">
-                    <span>© Sphear Ice 2026. All rights reserved</span>
-                    <div className="flex gap-6">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms & Conditions</a>
-                    </div>
-                </div>
-            </footer>
-
-        </div>
-    );
+            </div>
+        </section>
+    )
 }
