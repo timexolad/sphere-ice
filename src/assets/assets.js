@@ -1,7 +1,7 @@
 import logo from './sphear_extracted_assets/logo.jpg'
 import cupice from './sphear_extracted_assets/cupice.jpg'
 import oursphere from './sphear_extracted_assets/oursphere.jpg'
-import { Box, Circle, CircleUserRound, Compass, Gem, Martini, Package, Shield, ShoppingBag, Snowflake } from 'lucide-react'
+import { Box, ChefHat, Circle, CircleUserRound, Compass, ConciergeBell, Gem, Home, Martini, Package, Shield, ShoppingBag, Snowflake } from 'lucide-react'
 
 
 export const assets = {
@@ -77,5 +77,32 @@ export const formats = [
         icon: Package,
         title: '144 SPHERE BOX',
         description: 'Bulk box'
+    }
+]
+export const best=[
+    {
+        icon: Martini,
+        title:'COCKTAIL BARS',
+        description:'Elevate every pour and presentation'
+    },
+      {
+        icon: ConciergeBell,
+        title:'RESTAURANTS',
+        description:'Enhance premium dining experiences'
+    },
+      {
+        icon: Shield,
+        title:'PRIVATE CLUBS',
+        description:'Consistence qualities your members notice'
+    },
+    {
+        icon: ChefHat,
+        title:'EVENTS & CATERING',
+        description:'Impress guests with perfectly clear ice'
+    },
+     {
+        icon: Home,
+        title:'LUXURY HOME BARS',
+        description:'Because you deserve the best too'
     }
 ]
