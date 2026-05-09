@@ -1,3 +1,4 @@
+import { OurSphere } from "./components/Oursphere"
 import { Navbar } from "./layout/Navbar"
 import { About } from "./sections/About"
 import { Contact } from "./sections/Contact"
@@ -15,7 +16,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <About />
+       <OurSphere/>
         <Contact />
         <Delivery />
         <Trade />
