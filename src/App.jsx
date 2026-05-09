@@ -1,7 +1,6 @@
+import { Ourprocess } from "./components/Ourprocess"
 import { OurSphere } from "./components/Oursphere"
 import { Navbar } from "./layout/Navbar"
-import { About } from "./sections/About"
-import { Contact } from "./sections/Contact"
 import { Delivery } from "./sections/Delivery"
 import { Hero } from "./sections/Hero"
 import { Spheres } from "./sections/Spheres"
@@ -17,7 +16,7 @@ function App() {
       <main>
         <Hero />
        <OurSphere/>
-        <Contact />
+       <Ourprocess/>
         <Delivery />
         <Trade />
         <Spheres />
