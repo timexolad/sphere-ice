@@ -1,7 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import { assets, getintouch, poursphere, process, quicklinks, trade } from "../assets/assets";
 
-export function Oursphere() {
+export function OurSphere() {
     return (
         <div className="bg-black">
 
